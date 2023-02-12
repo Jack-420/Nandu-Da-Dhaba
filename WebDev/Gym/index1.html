@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style1.css">
+    <style>
+        body{
+            color: white;
+            margin: 0px;
+            padding: 0px;
+            background: url('Background.jpg');
+            background-size: cover;
+            background-position: -50px -110px;
+        }
+        .left{
+            /* background-color: aliceblue; */
+            display: inline-block;
+            position: absolute;
+            left: 40px;
+            top: 20px;
+        }
+        .mid{
+            display: block;
+            width: 50%;
+            margin: 20px auto;
+            /* border: 2px solid yellow; */
+        }
+        .right{
+            display: inline-block;
+            position: absolute;
+            right: 80px;
+            top: 50px;
+            /* border: 2px solid green; */
+        }
+        .left img{
+            /* background-color: aliceblue; */
+            height: 120px;
+            width: 120px;
+        }
+        .mid ul li{
+            font-size: 25px;
+            align-items: center;
+            display: inline-block;
+            margin: 30px 30px;
+        }
+        .mid li a{
+            padding: 5px 15px;
+            color: white;
+            font-size: large;
+            text-decoration: none;
+        }
+        .mid li a:hover{
+            background-color: white;
+            color: black;
+            border-radius: 20px;
+        }
+        .right input{
+            border-radius: 50px;
+            padding: 5px 0px;
+        }
+        .right img{
+            /* border: 2px solid white; */
+            margin: -7px -30px;
+            height: 20px;
+            width: 20px;
+        }
+        form{
+            border: 2px solid white;
+            width: 25%;
+            margin: 80px 60px;
+            padding: 20px;
+            border-radius: 20px;
+        }
+        form input{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            padding: 5px;
+            width: 70%;
+            border-radius: 10px;
+        }
+        form h1{
+            text-align: center;
+        }
+        form button{
+            width: 30%;
+            display: block;
+            margin: auto;
+            color: black;
+            background-color: white;
+            padding: 8px;
+            border-radius: 50px;
+        }
+        form button:hover{
+            color: white;
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="left">
+            <img src="Logo.png" alt="">
+        </div>
+        <div class="mid">
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Contact</a></li>
+                <li><a href="">Services</a></li>
+            </ul>
+        </div>
+        <div class="right">
+            <input type="text" placeholder="  Search">
+            <img src="search.png" alt="">
+        </div>
+    </header>
+    <form action="">
+        <h1>Register to the Gym</h1>
+        Name: <br>
+        <input type="text" placeholder="Enter your name:">
+        <br><br>
+        Phone Number: <br>
+        <input type="text" placeholder="Enter your Phone Number:">
+        <br><br>
+        Email id: <br>
+        <input type="email" placeholder="Enter your Email id:">
+        <br><br>
+        Address: <br>
+        <input type="text" placeholder="Enter your Address:">
+        <br><br>
+        <button>Submit</button>
+    </form>
+</body>
+</html>
